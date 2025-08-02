@@ -1,32 +1,13 @@
-# Ignore everything by default
-*
-
-# Allow Final_Submission directory and its contents
-!./
-
-# Allow specific files in  
-!./train.py
-!./predict.py
-!./visualize.py
-!./yolo_params.yaml
-
-# Allow runs directory structure for training and prediction results
-!./runs/
-!./runs/detect/
-!./runs/detect/train/
-!./runs/detect/train/**
-!./runs/detect/predict/
-!./runs/detect/predict/**
-
-# Allow documentation files
-!./Hackathon_Report.pdf
-!./Hackathon_Report.docx
-!./README.txt
-!./README.md
-
-# Allow optional App directory
-!./App/
-!./App/**
-
-# Don't ignore .gitignore itself
-!.gitignore
+# Ignore training data files and folders
+training_data/
+*.csv
+*.json
+*.txt
+*.jpg
+*.png
+*.jpeg
+*.bmp
+*.npy
+*.npz
+*.h5
+*.tfrecord
